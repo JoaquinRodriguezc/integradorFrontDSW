@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integrador Front</title>
+
+    <link
+      rel="stylesheet"
+      href="./style.css"
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="">
+    <header>
+      <nav class="navBar container">
+        <div class="cointainer">
+          <input id="searchBar" placeholder="Hamburguesas..." />
+          <button id="searchButton" class="navBarButton">Buscar</button>
+        </div>
+        <button
+          id="addProductButton"
+          class="navBarButton agregarProductoButton"
+        >
+          Agregar plato
+        </button>
+        <form method="dialog" id="formularioProducto" class="container">
+          <h3 id="formulatioTitle" class="roboto-bold">
+            Agregar o modificar un producto
+          </h3>
+
+          <input type="text" name="name" id="nameInput" placeholder="Nombre" />
+          <input
+            type="text"
+            name="image"
+            id="imageProduct"
+            placeholder="Imagen..."
+          />
+          <input
+            type="number"
+            name="number"
+            id="priceInput"
+            placeholder="Precio..."
+          />
+          <select
+            aria-placeholder="Seleccione una categoria"
+            id="categorySelect"
+          >
+            <option value="burger">Hamburguesas</option>
+            <option value="fries">Papas fritas</option>
+            <option value="drink">Bebida</option>
+          </select>
+          <div class="flex">
+            <button id="cancelarButton" class="formButton roboto-regular">
+              Cancelar
+            </button>
+            <button id="aceptarButton" class="formButton roboto-regular">
+              Aceptar
+            </button>
+            <button id="deleteButton" class="formButton roboto-regular">
+              Borrar
+            </button>
+          </div>
+        </form>
+      </nav>
+    </header>
+    <main id="container" class="roboto-regular">
+      <aside class="sideBar">
+        <h2>Categorias</h2>
+        <ul id="list">
+          <li>Categoria 1 ...</li>
+        </ul>
+      </aside>
+      <div id="productList"></div>
+    </main>
+  </body>
+  <script type="module" src="main.js"></script>
+</html>

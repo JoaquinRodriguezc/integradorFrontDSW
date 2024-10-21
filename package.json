@@ -1,0 +1,17 @@
+{
+  "name": "integradorfrontdsw",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module",
+  "devDependencies": {
+    "vite": "^5.4.8"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.14.4"
+  }
+}
